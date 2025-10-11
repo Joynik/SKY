@@ -1,0 +1,8 @@
+[environment]
+python-version = "3.13"
+
+[src]
+include = ["src"]
+
+[rules]
+missing-argument = "ignore"
