@@ -6,7 +6,7 @@ cache-dir = ".ruff_cache"
 # show-fixes = false
 # unsafe-fixes = false
 
-src = ["src"]
+src = ["config", "main"]
 
 # Same as Black.
 line-length = 100
@@ -24,8 +24,7 @@ exclude = [
     ".mypy_cache",
     "__pypackages__",
     "node_modules",
-    "**/migrations/versions/**",
-    "**/alembic/versions/**",
+    "**/migrations/**",
 ]
 include = ["*.py"]
 
@@ -65,7 +64,6 @@ select = [
     "UP",     # pyupgrade
     "PD",     # flake8-pydantic
     "PT",     # flake8-pytest-style
-    "FAST",   # FastAPI
     "ARG001", # unused arguments in functions
 ]
 ignore = [
@@ -106,7 +104,3 @@ convention = "google"
 keep-runtime-typing = true
 
 [lint.per-file-ignores]
-"**/utils/fastapi_limiter.py" = ["ARG001"]
-# Tests
-"tests/*" = ["B011", "PT015"]
-"tests/conftest.py" = ["ARG001"]
