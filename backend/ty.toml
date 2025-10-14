@@ -2,7 +2,7 @@
 python-version = "3.13"
 
 [src]
-include = ["src"]
+include = ["config", "main"]
 
 [rules]
 missing-argument = "ignore"
