@@ -61,9 +61,13 @@ dmypy.json
 # Log files
 *.log
 
+# DB
+db.sqlite3
+
 # Environment variables
 #.env
 #.env.prod
 #.env.test
 
-# certs/
+# Folder
+media/
